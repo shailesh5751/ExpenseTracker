@@ -59,4 +59,4 @@ npm start
 
 ## 🧑‍💻 Author
 **Shailesh More**
-📫 [LinkedIn]{https://www.linkedin.com/in/shailesh-more} | [GitHub]{https://github.com/shailesh5751}
+📫 [LinkedIn](https://www.linkedin.com/in/shailesh-more) | [GitHub](https://github.com/shailesh5751)
