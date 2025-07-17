@@ -1,16 +1,62 @@
-ExpenseTracker
+# 💸 Expense Tracker Web App
 
-ExpenseTracker is a personal finance management application designed to help users monitor and control their spending habits effectively. Built using modern technologies, this project leverages GraphQL for efficient data querying and React for a dynamic user experience.
+A full-stack web application for managing personal finances. Built using the MERN stack (MongoDB, Express, React, Node.js) and Apollo GraphQL for API communication.
 
-Features:
-Real-Time Expense Tracking: Log and categorize expenses instantly, with easy-to-use input fields and category selection.
-Budget Management: Set budget limits for different categories and receive alerts when spending approaches these limits.
-Data Visualization: View detailed analytics of your spending patterns through interactive charts and graphs.
-Advanced Filtering and Search: Use GraphQL to fetch and filter expense records efficiently based on different criteria, ensuring seamless data interaction.
-Monthly Summaries: Get an overview of your monthly expenses, categorized and visualized for a better understanding of your financial habits.
+## 🚀 Features
 
-Technologies Used:
-GraphQL: For efficient data handling and flexible API queries.
-React: To create a responsive and dynamic front-end interface.
-Node.js: For building a scalable back-end.
-Data Visualization Libraries: To create engaging and informative visual representations of spending data.
+- Add, edit, delete expenses and income entries
+- Real-time updates with Apollo Client
+- JWT-based authentication and protected routes
+- Modular GraphQL APIs for data operations
+- Responsive UI for desktop and mobile
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Apollo Client, Tailwind CSS
+- **Backend:** Node.js, Express.js, GraphQL, Passport.js
+- **Database:** MongoDB (with Mongoose)
+- **Authentication:** JWT + Passport.js
+- **Deployment:** Render / Netlify (optional)
+
+## 📦 Setup Instructions
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/shailesh5751/ExpenseTracker.git
+   cd ExpenseTracker
+   
+2. **Install dependencies**
+```bash
+# Backend
+cd server
+npm install
+
+# Frontend
+cd ../client
+npm install
+```
+
+3. **Configure environment variables**
+
+In server/.env, set:
+
+```env
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+4. **Run the app**
+
+```bash
+# Backend
+cd server
+npm run dev
+
+# Frontend
+cd ../client
+npm start
+```
+
+## 🧑‍💻 Author
+**Shailesh More**
+📫 [LinkedIn]{https://www.linkedin.com/in/shailesh-more} | [GitHub]{https://github.com/shailesh5751}
