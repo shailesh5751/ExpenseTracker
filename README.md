@@ -27,34 +27,28 @@ A full-stack web application for managing personal finances. Built using the MER
    
 2. **Install dependencies**
 ```bash
-# Backend
-cd server
-npm install
-
-# Frontend
-cd ../client
-npm install
+npm build
 ```
 
 3. **Configure environment variables**
 
-In server/.env, set:
+In backend/.env, set:
 
 ```env
 MONGO_URI=your_mongo_connection_string
-JWT_SECRET=your_jwt_secret
+SESSION_SECRET=your_session_secret_string
 ```
 
 4. **Run the app**
 
 ```bash
 # Backend
-cd server
-npm run dev
+cd backend
+node index.js
 
 # Frontend
-cd ../client
-npm start
+cd frontend
+npm run dev
 ```
 
 ## 🧑‍💻 Author
