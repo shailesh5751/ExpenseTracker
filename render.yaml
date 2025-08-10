@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: expense-tracker-app
+    env: node
+    buildCommand: |
+      cd frontend
+      npm install
+      npm run build
+      cd ../backend
+      npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        value: your_mongo_connection_string
+      - key: SESSION_SECRET
+        value: your_secret_here
+    plan: free
