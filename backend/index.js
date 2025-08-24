@@ -87,8 +87,12 @@ await server.start();
 app.use(
 	"/graphql",
 	cors({
-		origin: "*",
-		credentials: true,
+		origin: [
+			"http://localhost:3000",
+			"https://expense-tracker-pi-virid-11.vercel.app",
+			"https://expense-tracker-thenewgamerzy-4975s-projects.vercel.app"
+		],
+		credentials: true
 	}),
 	express.json(),
 	// expressMiddleware accepts the same arguments:
