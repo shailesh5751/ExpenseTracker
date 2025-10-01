@@ -87,7 +87,7 @@ await server.start();
 app.use(
 	"/graphql",
 	cors({
-		origin: "http://localhost:3000",
+		origin: "https://expensetracker-frontend-o2cx.onrender.com",
 		credentials: true,
 	}),
 	express.json(),
