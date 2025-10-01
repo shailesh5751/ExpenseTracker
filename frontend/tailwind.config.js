@@ -1,5 +1,5 @@
 import svgToDataUri from "mini-svg-data-uri/index.js";
-import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette.js";
+const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default;
 
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
